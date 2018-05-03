@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+@keyframes simple-float {
+	0% {transform: translateY(0px)}
+	100% {transform: translateY(20px)}	
+}
+
+.align-left .img-container img {
+	animation-name: simple-float;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+.align-right .img-container img {
+	animation-name: simple-float;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate-reverse;
+}
+
+/*Cloud Animations*/
+@keyframes cloud-float1 {
+	0% {transform: translate(0px, 0px)}
+	100% {transform: translate(-5px, -15px)}
+}
+@keyframes cloud-float3 {
+	0% {transform: translate(0px, 0px)}
+	100% {transform: translate(20px, 5px)}
+}
+@keyframes cloud-float2 {
+	0% {transform: translate(0px, 0px)}
+	100% {transform: translate(9px, 18px)}
+	
+}
+.cloud3 {
+	animation: cloud-float3 2s infinite ease-in-out alternate-reverse;
+}
+
+.cloud1 {
+	animation: cloud-float1 2s infinite ease-in-out alternate;
+}
+
+
+.cloud2 {
+	animation: cloud-float2 2s infinite ease-in-out alternate;
+}
+
+.cloud-container {
+	
+}
+
+
+
+/*Logo Hovers*/
+header img {
+	animation: simple-float 2s infinite ease-in-out alternate-reverse;
+}
